@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CEP</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            i{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tabela de endereços</h1>
+            <table id="ceps" class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>CEP</th>
+                        <th>Estado</th>
+                        <th>Cidade</th>
+                        <th>Endereço</th>
+                        <th>Complemento</th>
+                        <th>Bairro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <h4 id="botao" style="cursor: pointer">Adicionar novo CEP</h4>
+            <form id="formulario" style="display: none">
+                <input id="cep" class="form-control"type="text" maxlength="8" placeholder="CEP" style="width:200px; float:left;"/>
+                <input id="adicionar" class="btn btn-primary" type="submit" value="Adicionar" style="margin-left:15px" />
+            </form>
+            <p id="erro" style="color:red; display:none">CEP inválido</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
